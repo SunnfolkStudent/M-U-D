@@ -1,4 +1,5 @@
 using UnityEngine;
+using FMODUnity;
 
 public class MUDscript : MonoBehaviour
 {
@@ -17,6 +18,13 @@ public class MUDscript : MonoBehaviour
         {
             mud += 1f;
             Debug.Log("MUDscript" + mud);
+            RuntimeManager.PlayOneShot("event:/Digg Mud Right");
+            RuntimeManager.PlayOneShot("event:/Digg Mud Left");
         }
+    }
+
+    public void MUD()
+    {
+        
     }
 }
